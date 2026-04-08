@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three Star Media</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- GLOBAL HEADER: header-inner constrains and centers content -->
+    <header class="global-header">
+      <div class="header-inner">
+        <!-- Logo badge -->
+        <div class="badge">
+          <img src="assets/images/logo.png" alt="Three Star Media" />
+        </div>
+
+        <!-- ol: order of nav links is meaningful -->
+        <nav class="top-nav" aria-label="Primary navigation">
+          <ol class="top-nav-list">
+            <li><a href="#landing">Home</a></li>
+            <li><a href="#story">About Us</a></li>
+            <li><a href="#offerings">Services</a></li>
+            <li><a href="#people">Team</a></li>
+            <li><a href="#connect">Contact</a></li>
+          </ol>
+        </nav>
+
+        <!-- HTML5 search element -->
+        <search class="quick-search">
+          <form action="#" method="get">
+            <input
+              type="search"
+              name="q"
+              placeholder="Search..."
+              aria-label="Search site"
+            />
+            <button type="submit">&#128269;</button>
+          </form>
+        </search>
+      </div>
+    </header>
+
+    <main>
+      <!-- LANDING / HERO: plain div overlay on CSS background image -->
+      <section id="landing" class="landing-section">
+        <div class="landing-overlay">
+          <h1>Welcome to Three Star Media</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            rerum voluptas nesciunt quam nostrum similique nihil laboriosam
+            provident neque.
+          </p>
+          <a href="#connect" class="cta-solid">Connect with us &#9658;</a>
+        </div>
+      </section>
+
+      <!-- OUR STORY / ABOUT: two sibling sections + picture element -->
+      <section id="story" class="story-wrap">
+        <!-- Left: photo using picture for responsiveness -->
+        <section class="story-visual" aria-label="About photo">
+          <picture>
+            <source
+              srcset="assets/images/about-us.jpg"
+              media="(min-width: 600px)"
+            />
+            <img
+              src="assets/images/about-us.jpg"
+              alt="Modern office space with a ping pong table"
+            />
+          </picture>
+        </section>
+
+        <!-- Right: company description -->
+        <section class="story-text" aria-label="About description">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde
+            repellendus exercitationem asperiores consequatur recusandae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi velit
+            ipsam atque accusamus nihil laudantium sapiente blanditiis.
+          </p>
+        </section>
+      </section>
+
+      <!-- OFFERINGS / SERVICES: ul > li list with inner item-label for title -->
+      <section id="offerings" class="offerings-section">
+        <h2>Our Services</h2>
+
+        <ul class="offerings-list">
+          <!-- li replaces article — services are a collection -->
+          <li class="offering-item offer-wide">
+            <img
+              src="assets/images/digital.jpg"
+              alt="Laptop showing analytics dashboard"
+            />
+            <div class="offering-body">
+              <span class="item-label">Digital Transformation</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="cta-ghost">Digital Plans &#9658;</a>
+            </div>
+          </li>
+
+          <li class="offering-item offer-wide">
+            <img
+              src="assets/images/marketing.jpg"
+              alt="Phone showing YouTube logo"
+            />
+            <div class="offering-body">
+              <span class="item-label">Marketing</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="cta-ghost">Marketing Plans &#9658;</a>
+            </div>
+          </li>
+
+          <li class="offering-item offer-narrow">
+            <img
+              src="assets/images/video.jpg"
+              alt="Smartphone beside an open notebook"
+            />
+            <div class="offering-body">
+              <span class="item-label">Video Production</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="cta-ghost">Video Plans &#9658;</a>
+            </div>
+          </li>
+
+          <li class="offering-item offer-narrow">
+            <img
+              src="assets/images/web.jpg"
+              alt="Newspaper boxes on a city sidewalk"
+            />
+            <div class="offering-body">
+              <span class="item-label">Web Development</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="cta-ghost">Web Plans &#9658;</a>
+            </div>
+          </li>
+
+          <li class="offering-item offer-narrow">
+            <img
+              src="assets/images/print.jpg"
+              alt="Stack of printed documents on a desk"
+            />
+            <div class="offering-body">
+              <span class="item-label">Print</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="cta-ghost">Print Plans &#9658;</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- VISION: blockquote for the mission statement -->
+      <section class="vision-band">
+        <div class="vision-inner">
+          <!-- blockquote semantically suits a company statement -->
+          <blockquote class="mission-quote">
+            <h2>Our Vision</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </blockquote>
+
+          <a href="#" class="cta-solid">Learn More &#9658;</a>
+        </div>
+      </section>
+
+      <!-- TEAM / PEOPLE: figure + figcaption with details for bio -->
+      <section id="people" class="people-section">
+        <h2>Our Team</h2>
+
+        <div class="people-list">
+          <!-- figure: correct for image + caption pairing -->
+          <figure class="person-card">
+            <img src="assets/images/john.jpg" alt="Portrait of John Doe" />
+            <figcaption class="person-info">
+              <h3>John Doe</h3>
+              <h4>CEO &amp; Co-owner</h4>
+              <!-- details keeps bio expandable, open by default -->
+              <details open>
+                <summary class="visually-hidden">About John Doe</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </details>
+            </figcaption>
+          </figure>
+
+          <!-- person-card-flip moves image to the right -->
+          <figure class="person-card person-card-flip">
+            <img src="assets/images/bob.jpg" alt="Portrait of Bob Rite" />
+            <figcaption class="person-info">
+              <h3>Bob Rite</h3>
+              <h4>CFO &amp; Co-owner</h4>
+              <details open>
+                <summary class="visually-hidden">About Bob Rite</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </details>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- CONTACT: fieldset + legend for form, map in its own section block, hours in standalone div below -->
+      <section id="connect" class="connect-section">
+        <h2>Contact Us</h2>
+
+        <div class="connect-layout">
+          <!-- Form wrapped in fieldset -->
+          <div class="connect-form">
+            <form action="#" method="post">
+              <fieldset>
+                <legend>Send us a message</legend>
+
+                <div class="input-block">
+                  <label for="fullname">Full Name</label>
+                  <input type="text" id="fullname" name="fullname" required />
+                </div>
+
+                <div class="input-block">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="input-block">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="cta-solid">Send &#9658;</button>
+              </fieldset>
+            </form>
+          </div>
+
+          <!-- Map in its own section -->
+          <section class="connect-map" aria-label="Office location">
+            <h3>Find Us</h3>
+            <!-- satellite view t=k, wider zoom z=11 -->
+            <iframe
+              src="https://maps.google.com/maps?q=Algonquin%20College&t=k&z=11&ie=UTF8&iwloc=&output=embed"
+              title="Satellite map of Algonquin College"
+              allowfullscreen
+            >
+            </iframe>
+          </section>
+
+          <!-- Hours below as standalone div -->
+          <div class="connect-hours">
+            <h3>Hours of Operation</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Day</th>
+                  <th scope="col">Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday &ndash; Friday</td>
+                  <td>9 AM &ndash; 6 PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday &ndash; Sunday</td>
+                  <td>Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER: address wraps copyright and attribution -->
+    <footer class="global-footer">
+      <address class="footer-body">
+        <p>&copy; Three Star Media, 2020. All rights reserved.</p>
+        <p>
+          Photos from
+          <a
+            href="https://unsplash.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Unsplash</a
+          >
+        </p>
+      </address>
+    </footer>
+  </body>
+</html>
