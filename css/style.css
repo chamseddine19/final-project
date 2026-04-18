@@ -1,1 +1,373 @@
+/* Open Sans Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+/* Global Variables */
+:root {
+  --primary-gold: #c78c06;
+  --light-gold: #ffe6ac;
+  --dark-gray: #222;
+  --white: #fff;
+  --max-width: 1200px;
+  --font-main: "Open Sans", sans-serif;
+  --padding-side: 20px;
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: var(--font-main);
+  color: var(--dark-gray);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Typography */
+h1, h2, h3 {
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+
+/* Header Styles */
+.global-header {
+  background-color: var(--dark-gray);
+  padding: 15px 0;
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding-side);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.badge {
+  width: 100%;
+}
+
+.badge img {
+  width: 100%;
+  height: 50px;
+}
+
+.top-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-nav-list a {
+  color: var(--primary-gold);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.quick-search input {
+  padding: 8px;
+  border: 1px solid var(--primary-gold);
+}
+
+.quick-search button {
+  background-color: var(--primary-gold);
+  border: none;
+  padding: 8px 12px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Hero Section */
+.landing-section {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../assets/images/main-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+}
+
+.landing-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cta-solid {
+  display: inline-block;
+  background-color: var(--primary-gold);
+  color: var(--dark-gray);
+  padding: 12px 25px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/* Section Containers */
+.story-wrap,
+.offerings-section,
+.people-section,
+.connect-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 50px var(--padding-side);
+}
+
+/* About Section */
+.story-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.story-text {
+  background-color: var(--light-gold);
+  padding: 30px;
+}
+
+.story-text h2 {
+  border-left: 5px solid var(--primary-gold);
+  padding-left: 15px;
+}
+
+/* Services Section */
+.offerings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.offering-item {
+  background-color: var(--light-gold);
+}
+
+.offering-body {
+  padding: 20px;
+}
+
+.item-label {
+  display: block;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.cta-ghost {
+  display: inline-block;
+  background-color: var(--dark-gray);
+  color: var(--white);
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+/* Vision Section */
+.vision-band {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../assets/images/vision.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px var(--padding-side);
+  color: var(--white);
+  text-align: center;
+}
+
+/* Team Section */
+.people-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.person-card {
+  background-color: var(--light-gold);
+  display: flex;
+  flex-direction: column;
+}
+
+.person-info {
+  padding: 25px;
+}
+
+.person-info h4 {
+  color: var(--primary-gold);
+  border-bottom: 2px solid var(--primary-gold);
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+/* Contact Section */
+.connect-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.connect-form { order: 1; }
+.connect-hours { order: 2; }
+.connect-map { order: 3; }
+
+.connect-form fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.input-block {
+  margin-bottom: 15px;
+}
+
+.input-block label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.input-block input, .input-block textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.connect-map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+.connect-hours table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.connect-hours th, .connect-hours td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.connect-hours th {
+  background-color: var(--light-gold);
+}
+
+/* Footer Section */
+.global-footer {
+  background-color: var(--dark-gray);
+  color: var(--primary-gold);
+  padding: 30px var(--padding-side);
+  text-align: center;
+}
+
+/* Desktop Styles */
+@media (min-width: 760px) {
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .badge {
+    width: auto;
+  }
+
+  .badge img {
+    height: 50px;
+    width: auto;
+  }
+
+  .top-nav-list {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .landing-section {
+    min-height: 80vh;
+  }
+
+  h1 { font-size: 3.5rem; }
+
+  .story-wrap {
+    flex-direction: row;
+    padding: 80px var(--padding-side);
+  }
+
+  .story-visual, .story-text {
+    flex: 1;
+  }
+
+  .offerings-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .offer-wide { grid-column: span 3; }
+  .offer-narrow { grid-column: span 2; }
+
+  .people-list {
+    gap: 40px;
+  }
+
+  .person-card {
+    flex-direction: row;
+  }
+
+  .person-card-flip {
+    flex-direction: row-reverse;
+  }
+
+  .person-card img {
+    width: 40%;
+    object-fit: cover;
+  }
+
+  .connect-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "form map"
+      "hours hours";
+  }
+
+  .connect-form { grid-area: form; }
+  .connect-map { grid-area: map; }
+  .connect-hours { grid-area: hours; }
+}
+
+/* Visually Hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
